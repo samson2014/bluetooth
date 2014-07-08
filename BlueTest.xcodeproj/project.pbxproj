@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841E4D78196ADD2B0021468E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E4D77196ADD2B0021468E /* AppDelegate.swift */; };
+		841E4D7A196ADD2B0021468E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E4D79196ADD2B0021468E /* ViewController.swift */; };
+		841E4D7D196ADD2B0021468E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841E4D7B196ADD2B0021468E /* Main.storyboard */; };
+		841E4D7F196ADD2B0021468E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841E4D7E196ADD2B0021468E /* Images.xcassets */; };
+		841E4D8B196ADD2C0021468E /* BlueTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E4D8A196ADD2C0021468E /* BlueTestTests.swift */; };
+		841E4D97196ADDA80021468E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841E4D96196ADDA80021468E /* AVFoundation.framework */; };
+		841E4D9D196ADE0F0021468E /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 841E4D98196ADE0F0021468E /* 1.m4a */; };
+		841E4D9E196ADE0F0021468E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 841E4D99196ADE0F0021468E /* back.png */; };
+		841E4D9F196ADE0F0021468E /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 841E4D9A196ADE0F0021468E /* next.png */; };
+		841E4DA0196ADE0F0021468E /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 841E4D9B196ADE0F0021468E /* pause.png */; };
+		841E4DA1196ADE0F0021468E /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 841E4D9C196ADE0F0021468E /* play.png */; };
+		841E4DA9196ADE7B0021468E /* MixerHostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E4DA7196ADE7B0021468E /* MixerHostController.swift */; };
+		841E4DAC196ADE9B0021468E /* MCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E4DAB196ADE9B0021468E /* MCManager.m */; };
+		841E4DAE196ADEC40021468E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841E4DAD196ADEC40021468E /* AudioToolbox.framework */; };
+		841E4DB1196AE0F70021468E /* searchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E4DB0196AE0F70021468E /* searchController.m */; };
+		841E4DB5196AE30F0021468E /* MusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E4DB4196AE30F0021468E /* MusicController.swift */; };
+		841E4DBC196AE5F40021468E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E4DBB196AE5F40021468E /* FirstViewController.swift */; };
+		841E4DC0196AEF6C0021468E /* beatsMono.caf in Resources */ = {isa = PBXBuildFile; fileRef = 841E4DBE196AEF6C0021468E /* beatsMono.caf */; };
+		841E4DC1196AEF6C0021468E /* guitarStereo.caf in Resources */ = {isa = PBXBuildFile; fileRef = 841E4DBF196AEF6C0021468E /* guitarStereo.caf */; };
+		8433644D196AF4CA0064BB3B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8433644C196AF4CA0064BB3B /* CoreAudio.framework */; };
+		8433644F196AF4D20064BB3B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8433644E196AF4D20064BB3B /* Accelerate.framework */; };
+		84336451196AF9CA0064BB3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84336450196AF9CA0064BB3B /* CoreGraphics.framework */; };
+		8433646D196AFB550064BB3B /* AppleOpenALSupport.c in Sources */ = {isa = PBXBuildFile; fileRef = 84336465196AFB550064BB3B /* AppleOpenALSupport.c */; };
+		8433646E196AFB550064BB3B /* CMOpenALSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 84336468196AFB550064BB3B /* CMOpenALSound.m */; };
+		8433646F196AFB550064BB3B /* CMOpenALSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8433646A196AFB550064BB3B /* CMOpenALSoundManager.m */; };
+		84336470196AFB550064BB3B /* DebugOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 8433646C196AFB550064BB3B /* DebugOutput.m */; };
+		848F822D196B09E000D815FB /* MexerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F822C196B09E000D815FB /* MexerController.swift */; };
+		848F822F196B0BE800D815FB /* sendBlueMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F822E196B0BE800D815FB /* sendBlueMessage.swift */; };
+		848F8231196B1B7D00D815FB /* MCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F8230196B1B7D00D815FB /* MCManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		841E4D85196ADD2C0021468E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841E4D6A196ADD2B0021468E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 841E4D71196ADD2B0021468E;
+			remoteInfo = BlueTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		841E4D72196ADD2B0021468E /* BlueTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		841E4D76196ADD2B0021468E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841E4D77196ADD2B0021468E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		841E4D79196ADD2B0021468E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		841E4D7C196ADD2B0021468E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		841E4D7E196ADD2B0021468E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		841E4D84196ADD2C0021468E /* BlueTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		841E4D89196ADD2C0021468E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841E4D8A196ADD2C0021468E /* BlueTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTestTests.swift; sourceTree = "<group>"; };
+		841E4D96196ADDA80021468E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		841E4D98196ADE0F0021468E /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.m4a; sourceTree = "<group>"; };
+		841E4D99196ADE0F0021468E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		841E4D9A196ADE0F0021468E /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		841E4D9B196ADE0F0021468E /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		841E4D9C196ADE0F0021468E /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		841E4DA4196ADE7A0021468E /* BlueTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		841E4DA7196ADE7B0021468E /* MixerHostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixerHostController.swift; sourceTree = "<group>"; };
+		841E4DAA196ADE9B0021468E /* MCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCManager.h; sourceTree = "<group>"; };
+		841E4DAB196ADE9B0021468E /* MCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCManager.m; sourceTree = "<group>"; };
+		841E4DAD196ADEC40021468E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		841E4DAF196AE0F70021468E /* searchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchController.h; sourceTree = "<group>"; };
+		841E4DB0196AE0F70021468E /* searchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchController.m; sourceTree = "<group>"; };
+		841E4DB4196AE30F0021468E /* MusicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicController.swift; sourceTree = "<group>"; };
+		841E4DBB196AE5F40021468E /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		841E4DBE196AEF6C0021468E /* beatsMono.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = beatsMono.caf; path = sounds/beatsMono.caf; sourceTree = "<group>"; };
+		841E4DBF196AEF6C0021468E /* guitarStereo.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = guitarStereo.caf; path = sounds/guitarStereo.caf; sourceTree = "<group>"; };
+		8433644C196AF4CA0064BB3B /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		8433644E196AF4D20064BB3B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		84336450196AF9CA0064BB3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84336465196AFB550064BB3B /* AppleOpenALSupport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AppleOpenALSupport.c; sourceTree = "<group>"; };
+		84336466196AFB550064BB3B /* AppleOpenALSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleOpenALSupport.h; sourceTree = "<group>"; };
+		84336467196AFB550064BB3B /* CMOpenALSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMOpenALSound.h; sourceTree = "<group>"; };
+		84336468196AFB550064BB3B /* CMOpenALSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMOpenALSound.m; sourceTree = "<group>"; };
+		84336469196AFB550064BB3B /* CMOpenALSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMOpenALSoundManager.h; sourceTree = "<group>"; };
+		8433646A196AFB550064BB3B /* CMOpenALSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMOpenALSoundManager.m; sourceTree = "<group>"; };
+		8433646B196AFB550064BB3B /* DebugOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugOutput.h; sourceTree = "<group>"; };
+		8433646C196AFB550064BB3B /* DebugOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugOutput.m; sourceTree = "<group>"; };
+		84336471196AFB6C0064BB3B /* SynthesizeSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		84336473196AFE280064BB3B /* beatsMono.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beatsMono.caf; sourceTree = "<group>"; };
+		84336474196AFE280064BB3B /* guitarStereo.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitarStereo.caf; sourceTree = "<group>"; };
+		848F822C196B09E000D815FB /* MexerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MexerController.swift; sourceTree = "<group>"; };
+		848F822E196B0BE800D815FB /* sendBlueMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sendBlueMessage.swift; sourceTree = "<group>"; };
+		848F8230196B1B7D00D815FB /* MCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		841E4D6F196ADD2B0021468E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84336451196AF9CA0064BB3B /* CoreGraphics.framework in Frameworks */,
+				8433644F196AF4D20064BB3B /* Accelerate.framework in Frameworks */,
+				8433644D196AF4CA0064BB3B /* CoreAudio.framework in Frameworks */,
+				841E4DAE196ADEC40021468E /* AudioToolbox.framework in Frameworks */,
+				841E4D97196ADDA80021468E /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841E4D81196ADD2C0021468E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		841E4D69196ADD2B0021468E = {
+			isa = PBXGroup;
+			children = (
+				84336450196AF9CA0064BB3B /* CoreGraphics.framework */,
+				8433644E196AF4D20064BB3B /* Accelerate.framework */,
+				8433644C196AF4CA0064BB3B /* CoreAudio.framework */,
+				841E4DAD196ADEC40021468E /* AudioToolbox.framework */,
+				841E4D96196ADDA80021468E /* AVFoundation.framework */,
+				841E4D74196ADD2B0021468E /* BlueTest */,
+				841E4D87196ADD2C0021468E /* BlueTestTests */,
+				841E4D73196ADD2B0021468E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		841E4D73196ADD2B0021468E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841E4D72196ADD2B0021468E /* BlueTest.app */,
+				841E4D84196ADD2C0021468E /* BlueTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		841E4D74196ADD2B0021468E /* BlueTest */ = {
+			isa = PBXGroup;
+			children = (
+				84336472196AFC980064BB3B /* AudioEngine */,
+				841E4DBB196AE5F40021468E /* FirstViewController.swift */,
+				841E4DB4196AE30F0021468E /* MusicController.swift */,
+				848F822E196B0BE800D815FB /* sendBlueMessage.swift */,
+				841E4DAF196AE0F70021468E /* searchController.h */,
+				841E4DB0196AE0F70021468E /* searchController.m */,
+				841E4DAA196ADE9B0021468E /* MCManager.h */,
+				841E4DAB196ADE9B0021468E /* MCManager.m */,
+				848F8230196B1B7D00D815FB /* MCManager.swift */,
+				841E4DA7196ADE7B0021468E /* MixerHostController.swift */,
+				841E4D77196ADD2B0021468E /* AppDelegate.swift */,
+				841E4D79196ADD2B0021468E /* ViewController.swift */,
+				841E4D7B196ADD2B0021468E /* Main.storyboard */,
+				848F822C196B09E000D815FB /* MexerController.swift */,
+				841E4D7E196ADD2B0021468E /* Images.xcassets */,
+				841E4D75196ADD2B0021468E /* Supporting Files */,
+			);
+			path = BlueTest;
+			sourceTree = "<group>";
+		};
+		841E4D75196ADD2B0021468E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841E4DA4196ADE7A0021468E /* BlueTest-Bridging-Header.h */,
+				841E4DBE196AEF6C0021468E /* beatsMono.caf */,
+				841E4DBF196AEF6C0021468E /* guitarStereo.caf */,
+				841E4DBD196AEF6C0021468E /* sounds */,
+				841E4D98196ADE0F0021468E /* 1.m4a */,
+				841E4D99196ADE0F0021468E /* back.png */,
+				841E4D9A196ADE0F0021468E /* next.png */,
+				841E4D9B196ADE0F0021468E /* pause.png */,
+				841E4D9C196ADE0F0021468E /* play.png */,
+				841E4D76196ADD2B0021468E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841E4D87196ADD2C0021468E /* BlueTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				841E4D8A196ADD2C0021468E /* BlueTestTests.swift */,
+				841E4D88196ADD2C0021468E /* Supporting Files */,
+			);
+			path = BlueTestTests;
+			sourceTree = "<group>";
+		};
+		841E4D88196ADD2C0021468E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841E4D89196ADD2C0021468E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841E4DBD196AEF6C0021468E /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				84336473196AFE280064BB3B /* beatsMono.caf */,
+				84336474196AFE280064BB3B /* guitarStereo.caf */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		84336472196AFC980064BB3B /* AudioEngine */ = {
+			isa = PBXGroup;
+			children = (
+				84336471196AFB6C0064BB3B /* SynthesizeSingleton.h */,
+				84336465196AFB550064BB3B /* AppleOpenALSupport.c */,
+				84336466196AFB550064BB3B /* AppleOpenALSupport.h */,
+				84336467196AFB550064BB3B /* CMOpenALSound.h */,
+				84336468196AFB550064BB3B /* CMOpenALSound.m */,
+				84336469196AFB550064BB3B /* CMOpenALSoundManager.h */,
+				8433646A196AFB550064BB3B /* CMOpenALSoundManager.m */,
+				8433646B196AFB550064BB3B /* DebugOutput.h */,
+				8433646C196AFB550064BB3B /* DebugOutput.m */,
+			);
+			name = AudioEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		841E4D71196ADD2B0021468E /* BlueTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841E4D8E196ADD2C0021468E /* Build configuration list for PBXNativeTarget "BlueTest" */;
+			buildPhases = (
+				841E4D6E196ADD2B0021468E /* Sources */,
+				841E4D6F196ADD2B0021468E /* Frameworks */,
+				841E4D70196ADD2B0021468E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueTest;
+			productName = BlueTest;
+			productReference = 841E4D72196ADD2B0021468E /* BlueTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		841E4D83196ADD2C0021468E /* BlueTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841E4D91196ADD2C0021468E /* Build configuration list for PBXNativeTarget "BlueTestTests" */;
+			buildPhases = (
+				841E4D80196ADD2C0021468E /* Sources */,
+				841E4D81196ADD2C0021468E /* Frameworks */,
+				841E4D82196ADD2C0021468E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				841E4D86196ADD2C0021468E /* PBXTargetDependency */,
+			);
+			name = BlueTestTests;
+			productName = BlueTestTests;
+			productReference = 841E4D84196ADD2C0021468E /* BlueTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		841E4D6A196ADD2B0021468E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "APT-IT";
+				TargetAttributes = {
+					841E4D71196ADD2B0021468E = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					841E4D83196ADD2C0021468E = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 841E4D71196ADD2B0021468E;
+					};
+				};
+			};
+			buildConfigurationList = 841E4D6D196ADD2B0021468E /* Build configuration list for PBXProject "BlueTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 841E4D69196ADD2B0021468E;
+			productRefGroup = 841E4D73196ADD2B0021468E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				841E4D71196ADD2B0021468E /* BlueTest */,
+				841E4D83196ADD2C0021468E /* BlueTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		841E4D70196ADD2B0021468E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841E4DC1196AEF6C0021468E /* guitarStereo.caf in Resources */,
+				841E4DA1196ADE0F0021468E /* play.png in Resources */,
+				841E4D9E196ADE0F0021468E /* back.png in Resources */,
+				841E4D9F196ADE0F0021468E /* next.png in Resources */,
+				841E4DA0196ADE0F0021468E /* pause.png in Resources */,
+				841E4D9D196ADE0F0021468E /* 1.m4a in Resources */,
+				841E4DC0196AEF6C0021468E /* beatsMono.caf in Resources */,
+				841E4D7D196ADD2B0021468E /* Main.storyboard in Resources */,
+				841E4D7F196ADD2B0021468E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841E4D82196ADD2C0021468E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841E4D6E196ADD2B0021468E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841E4DAC196ADE9B0021468E /* MCManager.m in Sources */,
+				848F822D196B09E000D815FB /* MexerController.swift in Sources */,
+				84336470196AFB550064BB3B /* DebugOutput.m in Sources */,
+				848F8231196B1B7D00D815FB /* MCManager.swift in Sources */,
+				841E4D7A196ADD2B0021468E /* ViewController.swift in Sources */,
+				841E4DBC196AE5F40021468E /* FirstViewController.swift in Sources */,
+				8433646D196AFB550064BB3B /* AppleOpenALSupport.c in Sources */,
+				8433646F196AFB550064BB3B /* CMOpenALSoundManager.m in Sources */,
+				841E4DB1196AE0F70021468E /* searchController.m in Sources */,
+				841E4DB5196AE30F0021468E /* MusicController.swift in Sources */,
+				8433646E196AFB550064BB3B /* CMOpenALSound.m in Sources */,
+				848F822F196B0BE800D815FB /* sendBlueMessage.swift in Sources */,
+				841E4D78196ADD2B0021468E /* AppDelegate.swift in Sources */,
+				841E4DA9196ADE7B0021468E /* MixerHostController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841E4D80196ADD2C0021468E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841E4D8B196ADD2C0021468E /* BlueTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		841E4D86196ADD2C0021468E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 841E4D71196ADD2B0021468E /* BlueTest */;
+			targetProxy = 841E4D85196ADD2C0021468E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		841E4D7B196ADD2B0021468E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841E4D7C196ADD2B0021468E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		841E4D8C196ADD2C0021468E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		841E4D8D196ADD2C0021468E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		841E4D8F196ADD2C0021468E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = BlueTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BlueTest/BlueTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		841E4D90196ADD2C0021468E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = BlueTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BlueTest/BlueTest-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		841E4D92196ADD2C0021468E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueTest.app/BlueTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlueTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		841E4D93196ADD2C0021468E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueTest.app/BlueTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlueTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841E4D6D196ADD2B0021468E /* Build configuration list for PBXProject "BlueTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841E4D8C196ADD2C0021468E /* Debug */,
+				841E4D8D196ADD2C0021468E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841E4D8E196ADD2C0021468E /* Build configuration list for PBXNativeTarget "BlueTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841E4D8F196ADD2C0021468E /* Debug */,
+				841E4D90196ADD2C0021468E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841E4D91196ADD2C0021468E /* Build configuration list for PBXNativeTarget "BlueTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841E4D92196ADD2C0021468E /* Debug */,
+				841E4D93196ADD2C0021468E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 841E4D6A196ADD2B0021468E /* Project object */;
+}
