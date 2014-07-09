@@ -490,6 +490,26 @@
                                     <rect key="frame" x="-7" y="290" width="320" height="44"/>
                                 </variation>
                             </toolbar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="erI-aR-WnI">
+                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="83" y="466" width="123" height="29"/>
+                                </variation>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qWr-PS-NYE">
+                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="83" y="466" width="123" height="29"/>
+                                </variation>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -506,6 +526,8 @@
                                 <exclude reference="i5X-pe-2w7"/>
                                 <exclude reference="ptx-sn-DkD"/>
                                 <exclude reference="Amp-MG-P0Q"/>
+                                <exclude reference="erI-aR-WnI"/>
+                                <exclude reference="qWr-PS-NYE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -521,6 +543,8 @@
                                 <include reference="i5X-pe-2w7"/>
                                 <include reference="ptx-sn-DkD"/>
                                 <include reference="Amp-MG-P0Q"/>
+                                <include reference="erI-aR-WnI"/>
+                                <include reference="qWr-PS-NYE"/>
                             </mask>
                         </variation>
                     </view>
