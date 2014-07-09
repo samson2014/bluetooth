@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u3d-lR-oeN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u3d-lR-oeN">
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-445" y="83"/>
         </scene>
-        <!--First View Controller - Chat-->
+        <!--Chat-->
         <scene sceneID="yGx-gp-abY">
             <objects>
                 <viewController id="AH1-q7-dR0" customClass="FirstViewController" customModule="BlueTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -74,7 +74,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="jhk-1H-2kR"/>
@@ -104,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="-345" y="-542.25"/>
         </scene>
-        <!--Search Controller - Search-->
+        <!--Search-->
         <scene sceneID="X5l-De-S4b">
             <objects>
                 <viewController storyboardIdentifier="searchController" id="Iji-XD-ATH" customClass="searchController" sceneMemberID="viewController">
@@ -136,7 +135,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xo6-iF-WoP">
                                 <rect key="frame" x="251" y="58" width="51" height="31"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="251" y="79" width="51" height="31"/>
+                                    <rect key="frame" x="251" y="79" width="52" height="31"/>
                                 </variation>
                             </switch>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yft-KK-kji">
@@ -171,9 +170,24 @@
                                     <action selector="browseForDevices:" destination="Iji-XD-ATH" eventType="touchUpInside" id="Z1z-D4-7Ui"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AoC-5l-Unv">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="251" y="556" width="20" height="20"/>
+                                </variation>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="AoC-5l-Unv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="AoC-5l-Unv"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" id="8GD-pv-DCc"/>
                     <connections>
@@ -187,7 +201,7 @@
             </objects>
             <point key="canvasLocation" x="340.5" y="78.75"/>
         </scene>
-        <!--Music Controller - Music-->
+        <!--Music-->
         <scene sceneID="p1W-Hv-oe1">
             <objects>
                 <viewController id="php-rf-Mfp" customClass="MusicController" customModule="BlueTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -297,7 +311,6 @@
                             </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.5186941964285714" green="0.5186941964285714" blue="0.5186941964285714" alpha="1" colorSpace="calibratedRGB"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="j20-0P-Aam"/>
@@ -343,7 +356,7 @@
             </objects>
             <point key="canvasLocation" x="307.5" y="-449.25"/>
         </scene>
-        <!--Mixer Host Controller - Item-->
+        <!--Item-->
         <scene sceneID="STd-Vy-vSh">
             <objects>
                 <viewController id="tx6-Rc-YYH" customClass="MixerHostController" customModule="BlueTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -490,9 +503,33 @@
                                     <rect key="frame" x="-7" y="290" width="320" height="44"/>
                                 </variation>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMG-4V-oiB">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="137" y="486" width="46" height="30"/>
+                                </variation>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="34M-lF-VTv">
+                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="15" y="403" width="123" height="29"/>
+                                </variation>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jHB-tW-cDg">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="425" width="51" height="31"/>
+                                </variation>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="xE7-hZ-fIB"/>
@@ -506,6 +543,9 @@
                                 <exclude reference="i5X-pe-2w7"/>
                                 <exclude reference="ptx-sn-DkD"/>
                                 <exclude reference="Amp-MG-P0Q"/>
+                                <exclude reference="IMG-4V-oiB"/>
+                                <exclude reference="34M-lF-VTv"/>
+                                <exclude reference="jHB-tW-cDg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -521,6 +561,9 @@
                                 <include reference="i5X-pe-2w7"/>
                                 <include reference="ptx-sn-DkD"/>
                                 <include reference="Amp-MG-P0Q"/>
+                                <include reference="IMG-4V-oiB"/>
+                                <include reference="34M-lF-VTv"/>
+                                <include reference="jHB-tW-cDg"/>
                             </mask>
                         </variation>
                     </view>
@@ -539,7 +582,7 @@
             </objects>
             <point key="canvasLocation" x="1249" y="391"/>
         </scene>
-        <!--Tab Bar Controller - Mexer-->
+        <!--Mexer-->
         <scene sceneID="gvN-jC-dRl">
             <objects>
                 <tabBarController id="a9F-MG-Gpc" sceneMemberID="viewController">
@@ -560,7 +603,7 @@
             </objects>
             <point key="canvasLocation" x="942" y="-437.25"/>
         </scene>
-        <!--Mexer Controller - Mexer1-->
+        <!--Mexer1-->
         <scene sceneID="mGL-5c-Kge">
             <objects>
                 <viewController id="gb0-aE-xRf" customClass="MexerController" customModule="BlueTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -623,9 +666,32 @@
                                     <rect key="frame" x="0.0" y="31" width="320" height="44"/>
                                 </variation>
                             </navigationBar>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6KY-xg-itJ">
+                                <rect key="frame" x="-19" y="-18" width="39" height="37"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="164" y="486" width="39" height="37"/>
+                                </variation>
+                            </pageControl>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="h7S-ia-chv">
+                                <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="101" y="445" width="150" height="2"/>
+                                </variation>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XaF-su-WFB">
+                                <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="48" y="392" width="150" height="2"/>
+                                </variation>
+                            </progressView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o8E-oh-YLb">
+                                <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="48" y="287" width="94" height="29"/>
+                                </variation>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="jBe-Oj-oom"/>
@@ -633,6 +699,10 @@
                                 <exclude reference="poD-oh-15v"/>
                                 <exclude reference="d7z-1T-tIg"/>
                                 <exclude reference="GCn-jF-GY8"/>
+                                <exclude reference="6KY-xg-itJ"/>
+                                <exclude reference="h7S-ia-chv"/>
+                                <exclude reference="XaF-su-WFB"/>
+                                <exclude reference="o8E-oh-YLb"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -642,6 +712,10 @@
                                 <include reference="poD-oh-15v"/>
                                 <include reference="d7z-1T-tIg"/>
                                 <include reference="GCn-jF-GY8"/>
+                                <include reference="6KY-xg-itJ"/>
+                                <include reference="h7S-ia-chv"/>
+                                <include reference="XaF-su-WFB"/>
+                                <include reference="o8E-oh-YLb"/>
                             </mask>
                         </variation>
                     </view>
