@@ -135,7 +135,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xo6-iF-WoP">
                                 <rect key="frame" x="251" y="58" width="51" height="31"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="251" y="79" width="52" height="31"/>
+                                    <rect key="frame" x="251" y="79" width="51" height="31"/>
                                 </variation>
                             </switch>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yft-KK-kji">
@@ -690,6 +690,12 @@
                                     <rect key="frame" x="48" y="287" width="94" height="29"/>
                                 </variation>
                             </stepper>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4b-wI-QnV">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="131" y="511" width="51" height="31"/>
+                                </variation>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -703,6 +709,7 @@
                                 <exclude reference="h7S-ia-chv"/>
                                 <exclude reference="XaF-su-WFB"/>
                                 <exclude reference="o8E-oh-YLb"/>
+                                <exclude reference="T4b-wI-QnV"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -716,6 +723,7 @@
                                 <include reference="h7S-ia-chv"/>
                                 <include reference="XaF-su-WFB"/>
                                 <include reference="o8E-oh-YLb"/>
+                                <include reference="T4b-wI-QnV"/>
                             </mask>
                         </variation>
                     </view>
